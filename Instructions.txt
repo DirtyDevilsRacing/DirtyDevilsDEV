@@ -1,0 +1,3 @@
+The file folders ArduinoDUE(v*.*.*) and ArduinoUNO(v*.*.*) are only to store that file. If you try and compile this tor the arduino
+it will give errors. To fix it copy all text in the file and paste it into the file named "ArduinoDUE" or "ArduinoUNO" and then
+compile it for the arduino you want.
