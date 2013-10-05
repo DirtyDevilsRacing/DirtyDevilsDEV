@@ -44,6 +44,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\cores\arduino;H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\variants\arduino_due_x;H:\Windows\Program Files\Arduino\1.5\hardware\tools\g++_arm_none_eabi\arm-none-eabi\include;H:\Windows\Program Files\Arduino\1.5\hardware\tools\g++_arm_none_eabi\arm_none_eabi\include;H:\Windows\Program Files\Arduino\1.5\hardware\tools\g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include;H:\Windows\Program Files\Arduino\1.5\hardware\tools\g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include\;H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\system\CMSIS\CMSIS\Include\;H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\system\CMSIS\Device\ATMEL\;H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\system\libsam;H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\system\libsam\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Scott\Documents\Visual Studio 2012\Projects\DirtyDevilsDEV\Arduino Projects\ArduinoDUE\Visual Micro\.ArduinoDUE.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__SAM3X8E__;USB_PID=0x003e;USB_VID=0x2341;USBCON;ARDUINO=152;ARDUINO_MAIN;printf=iprintf;__SAM__;F_CPU=84000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

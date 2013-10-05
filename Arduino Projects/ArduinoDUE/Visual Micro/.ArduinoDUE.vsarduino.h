@@ -43,5 +43,5 @@ void updateCycleAverageTime(long cycleTime);
 #include "H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
 #include "H:\Windows\Program Files\Arduino\1.5\hardware\arduino\sam\cores\arduino\arduino.h"
-#include "C:\Users\Scott\Documents\Visual Studio 2012\Projects\DirtyDevils Dev\Arduino Projects\ArduinoDUE\ArduinoDUE.ino"
+#include "C:\Users\Scott\Documents\Visual Studio 2012\Projects\DirtyDevilsDEV\Arduino Projects\ArduinoDUE\ArduinoDUE.ino"
 #endif

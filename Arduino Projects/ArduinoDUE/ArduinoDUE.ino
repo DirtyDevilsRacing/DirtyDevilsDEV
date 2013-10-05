@@ -12,7 +12,7 @@ String names[8] = {"Brake Position", "Throttle Position", "Temperature", "Oil Pr
 void setup(){
 	Serial.begin(9600);	
 	printHeaderLine();
-	
+	delay(100);
 }
 void loop(){
 	//	
