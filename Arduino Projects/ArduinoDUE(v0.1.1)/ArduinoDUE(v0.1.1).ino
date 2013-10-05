@@ -5,6 +5,7 @@ int samples;
 int cycles;
 float sampleAverage;
 float cycleAverage;
+int desiredCycleTimeSeconds;
 
 int lastCycle;
 
@@ -16,25 +17,27 @@ void setup(){
 }
 void loop(){
 	//	
-	
+	float cycleAverage;
+
 	long start = millis();
 	for(int i = 0; i < 8; i++)
 	{
 		Serial.print(printData(i, names[i]));				
 		Serial.print("\t");
-
 	}
+
 	Serial.println();
-	//delay(10);
+	delay(10);
 	long end = millis();
 	lastCycle = (end - start);
+
 	cycles++;
+
 	updateCycleAverageTime(lastCycle);
-	//printCycleStats(longSampleName, longSample);
+	printCycleStats(longSampleName, longSample);
 }	
 void printHeaderLine()
 {
-
 	for (int i = 0; i < 8; i++)
 	{
 		Serial.print(names[i]);
@@ -74,13 +77,13 @@ void printCycleStats(String longSample, long longSampleTime)
 	Serial.print(time);
 	Serial.println("ms");
 }
-void updateSampleAverageTime(long sampleTime)
+float updateSampleAverageTime(long sampleTime)
 {
 	long totalTime = (sampleAverage * (samples - 1)) + sampleTime;
-	sampleAverage = float(totalTime / samples);
+	return float(totalTime / samples);
 }
-void updateCycleAverageTime(long cycleTime)
+float updateCycleAverageTime(long cycleTime)
 {
 	long totalTime = (cycleAverage * (cycles - 1)) + cycleTime;
-	cycleAverage = float(totalTime / cycles);
+	return float(totalTime / cycles);
 }
